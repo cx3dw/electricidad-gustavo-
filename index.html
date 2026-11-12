@@ -114,4 +114,808 @@
                     <a href="#servicios" class="hover:text-amber-400 transition">Servicios</a>
                     <a href="#promociones" class="hover:text-amber-400 transition flex items-center gap-1.5">
                         Promociones
-                        <span class
+                        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                    </a>
+                    <a href="#trayectoria" class="hover:text-amber-400 transition">Trayectoria</a>
+                    <a href="#contacto" class="hover:text-amber-400 transition">Ubicación</a>
+                </nav>
+
+                <!-- Botón CTA Desktop -->
+                <div class="hidden md:flex items-center gap-3">
+                    <a href="tel:+59894586969" class="text-slate-300 hover:text-amber-400 text-sm font-bold flex items-center gap-2 px-3 py-2">
+                        <i class="fa-solid fa-phone text-amber-400"></i> 094 586 969
+                    </a>
+                    <a href="#agendar" class="bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 font-display font-extrabold text-xs uppercase tracking-wider px-5 py-3 rounded-lg shadow-lg shadow-amber-500/20 transition transform hover:-translate-y-0.5">
+                        Agendar Turno
+                    </a>
+                </div>
+
+                <!-- Botón Menú Móvil -->
+                <button id="mobileMenuBtn" class="md:hidden text-slate-200 hover:text-amber-400 p-2 text-2xl focus:outline-none" aria-label="Abrir menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú Móvil Desplegable -->
+        <div id="mobileMenu" class="hidden md:hidden bg-navy-900 border-b border-slate-800 px-4 pt-3 pb-6 space-y-3">
+            <a href="#inicio" onclick="cerrarMenuMovil()" class="block py-2 text-base font-semibold text-slate-200 hover:text-amber-400">Inicio</a>
+            <a href="#servicios" onclick="cerrarMenuMovil()" class="block py-2 text-base font-semibold text-slate-200 hover:text-amber-400">Servicios</a>
+            <a href="#promociones" onclick="cerrarMenuMovil()" class="block py-2 text-base font-semibold text-amber-400">Promociones Especiales</a>
+            <a href="#trayectoria" onclick="cerrarMenuMovil()" class="block py-2 text-base font-semibold text-slate-200 hover:text-amber-400">Trayectoria (+25 Años)</a>
+            <a href="#contacto" onclick="cerrarMenuMovil()" class="block py-2 text-base font-semibold text-slate-200 hover:text-amber-400">Ubicación y Contacto</a>
+            <div class="pt-3 border-t border-slate-800 flex flex-col gap-3">
+                <a href="tel:+59894586969" class="w-full text-center py-3 rounded-lg border border-slate-700 text-slate-200 font-bold">
+                    <i class="fa-solid fa-phone text-amber-400 mr-2"></i> Llamar: 094 586 969
+                </a>
+                <a href="#agendar" onclick="cerrarMenuMovil()" class="w-full text-center py-3 rounded-lg bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-950 font-extrabold uppercase tracking-wide">
+                    Agendar Turno Ahora
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO / INICIO -->
+    <section id="inicio" class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(245,158,11,0.12),transparent_45%)] pointer-events-none"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(21,50,104,0.45),transparent_55%)] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-navy-800/90 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-widest mb-6">
+                        <i class="fa-solid fa-bolt"></i> Taller Especializado en Montevideo
+                    </div>
+
+                    <h1 class="font-display font-black text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-tight mb-4">
+                        <span class="text-metallic block">GUSTAVO</span>
+                        <span class="text-electric-grad block mt-1">Electricidad Automotriz</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 leading-relaxed mb-8">
+                        Diagnóstico preciso, reparación y mantenimiento integral del sistema eléctrico y electrónico de tu vehículo. Soluciones confiables y garantizadas en el centro de Montevideo.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+                        <a href="#agendar" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 font-display font-extrabold text-sm uppercase tracking-wider shadow-xl shadow-amber-500/25 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calendar-check text-lg"></i> Agendar Servicio
+                        </a>
+                        <a href="https://wa.me/59894586969?text=Hola%20Gustavo!%20Quisiera%20hacer%20una%20consulta%20por%20electricidad%20automotriz." target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-navy-800 hover:bg-navy-700 border border-slate-600 hover:border-amber-400 text-white font-display font-bold text-sm uppercase tracking-wider transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i> WhatsApp Directo
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/90 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <span class="font-display font-black text-2xl sm:text-3xl text-amber-400 block">+25 Años</span>
+                            <span class="text-xs sm:text-sm text-slate-400 font-medium">De experiencia</span>
+                        </div>
+                        <div>
+                            <span class="font-display font-black text-2xl sm:text-3xl text-white block">Scanner</span>
+                            <span class="text-xs sm:text-sm text-slate-400 font-medium">Multimarca</span>
+                        </div>
+                        <div>
+                            <span class="font-display font-black text-2xl sm:text-3xl text-white block">Yi 1688</span>
+                            <span class="text-xs sm:text-sm text-slate-400 font-medium">Montevideo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-96 sm:h-96 rounded-3xl p-3 bg-gradient-to-b from-slate-700/40 to-navy-950 border border-amber-500/30 shadow-2xl logo-glow">
+                        <div class="w-full h-full rounded-2xl overflow-hidden bg-navy-900 flex items-center justify-center relative">
+                            <img src="logo.jpg" alt="GUSTAVO Electricidad Automotriz" class="w-full h-full object-cover" onerror="this.style.display='none'; document.getElementById('logoFallbackHero').style.display='flex';">
+                            <div id="logoFallbackHero" class="hidden flex-col items-center justify-center text-center p-6">
+                                <div class="w-24 h-24 rounded-full bg-amber-500/10 border-2 border-amber-400 flex items-center justify-center mb-4">
+                                    <i class="fa-solid fa-bolt text-5xl text-amber-400"></i>
+                                </div>
+                                <span class="font-display font-black text-3xl text-metallic tracking-wider">GUSTAVO</span>
+                                <span class="text-xs font-bold tracking-[0.25em] text-amber-400 uppercase mt-2">Electricidad Automotriz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section id="servicios" class="py-20 bg-navy-900/60 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-400 font-bold text-xs uppercase tracking-[0.25em] block mb-2">Soluciones Integrales</span>
+                <h2 class="font-display font-black text-3xl sm:text-4xl text-metallic mb-4">Nuestros Servicios Especializados</h2>
+                <p class="text-slate-400 text-base sm:text-lg">
+                    Seleccioná el servicio que necesitás para agendar tu consulta directamente con el taller.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Servicio 1 -->
+                <div onclick="seleccionarServicio('Reparación de Aire Acondicionado')" class="card-glass rounded-2xl p-7 transition cursor-pointer group border-amber-500/40">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-5 group-hover:bg-amber-500 group-hover:text-slate-950 transition">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-amber-400 transition">Aire Acondicionado Automotriz</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Carga de gas, detección de fugas, reparación de compresores y mantenimiento para que tu vehículo enfríe perfecto.
+                    </p>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1.5">
+                        Agendar este servicio <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                    </span>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div onclick="seleccionarServicio('Reparación de Alternadores y Arranques')" class="card-glass rounded-2xl p-7 transition cursor-pointer group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-5 group-hover:bg-amber-500 group-hover:text-slate-950 transition">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-amber-400 transition">Alternadores y Arranques</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Reparación completa, cambio de carbones, rulemanes, reguladores de voltaje, bendix y bobinados.
+                    </p>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1.5">
+                        Agendar este servicio <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                    </span>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div onclick="seleccionarServicio('Diagnóstico Computarizado e Inyección')" class="card-glass rounded-2xl p-7 transition cursor-pointer group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-5 group-hover:bg-amber-500 group-hover:text-slate-950 transition">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-amber-400 transition">Diagnóstico y Scanner</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Lectura y borrado de fallas de motor (Check Engine), sensores ABS, Airbag e inyección electrónica.
+                    </p>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1.5">
+                        Agendar este servicio <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                    </span>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div onclick="seleccionarServicio('Baterías y Sistema de Carga')" class="card-glass rounded-2xl p-7 transition cursor-pointer group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-5 group-hover:bg-amber-500 group-hover:text-slate-950 transition">
+                        <i class="fa-solid fa-car-battery"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-amber-400 transition">Baterías y Sistema de Carga</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Control de consumo en reposo, detección de fugas de corriente, testeo y recambio garantizado.
+                    </p>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1.5">
+                        Agendar este servicio <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                    </span>
+                </div>
+
+                <!-- Servicio 5 -->
+                <div onclick="seleccionarServicio('Instalación de Luces y Tableros')" class="card-glass rounded-2xl p-7 transition cursor-pointer group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-5 group-hover:bg-amber-500 group-hover:text-slate-950 transition">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-amber-400 transition">Iluminación y Tableros</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Reparación de luces reglamentarias, camineros, llaves de luz, instrumental de tablero y luces LED.
+                    </p>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1.5">
+                        Agendar este servicio <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                    </span>
+                </div>
+
+                <!-- Servicio 6 -->
+                <div onclick="seleccionarServicio('Reparación de Cortos y Cableado')" class="card-glass rounded-2xl p-7 transition cursor-pointer group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-5 group-hover:bg-amber-500 group-hover:text-slate-950 transition">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-amber-400 transition">Cortocircuitos y Cableado</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Localización y reconstrucción de instalaciones eléctricas dañadas, fusibleras, relés y fallas intermitentes.
+                    </p>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1.5">
+                        Agendar este servicio <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PROMOCIONES ESPECIALES -->
+    <section id="promociones" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-amber-400 font-bold text-xs uppercase tracking-[0.25em] block mb-2">Beneficios Vigentes</span>
+                    <h2 class="font-display font-black text-3xl sm:text-4xl text-metallic">Promociones Especiales</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md">
+                    Aprovechá nuestras promociones activas en climatización y mantenimiento preventivo para tu vehículo.
+                </p>
+            </div>
+
+            <!-- Contenedor Dinámico de Promociones -->
+            <div id="promocionesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Se renderiza por JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN TRAYECTORIA / RESPALDO -->
+    <section id="trayectoria" class="py-20 bg-navy-900/70 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-amber-400 font-bold text-xs uppercase tracking-[0.25em] block mb-2">Confianza y Experiencia</span>
+                    <h2 class="font-display font-black text-3xl sm:text-4xl text-metallic mb-6">
+                        Más de 25 años resolviendo fallas eléctricas con precisión
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        En <strong>GUSTAVO Electricidad Automotriz</strong> combinamos más de dos décadas y media de oficio mecánico-eléctrico con instrumental moderno de diagnóstico para encontrar el origen real de cada falla, evitando cambios innecesarios de repuestos.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-slate-200 text-sm sm:text-base"><strong>Atención directa y personalizada:</strong> Hablás directamente con quien revisa tu vehículo.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-slate-200 text-sm sm:text-base"><strong>Presupuesto claro previo:</strong> Te informamos el diagnóstico y costo antes de realizar la reparación.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-slate-200 text-sm sm:text-base"><strong>Ubicación céntrica en Montevideo:</strong> Fácil acceso en Yi 1688.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div class="card-glass p-6 rounded-2xl border-l-4 border-l-amber-400">
+                        <i class="fa-solid fa-award text-3xl text-amber-400 mb-3"></i>
+                        <h3 class="font-display font-black text-2xl text-white mb-1">+25 Años</h3>
+                        <p class="text-slate-400 text-sm">Trayectoria comprobada atendiendo vehículos particulares y flotas.</p>
+                    </div>
+                    <div class="card-glass p-6 rounded-2xl border-l-4 border-l-amber-400">
+                        <i class="fa-solid fa-shield-halved text-3xl text-amber-400 mb-3"></i>
+                        <h3 class="font-display font-black text-2xl text-white mb-1">Garantía</h3>
+                        <p class="text-slate-400 text-sm">Trabajos prolijos con repuestos de primera calidad y respaldo.</p>
+                    </div>
+                    <div class="card-glass p-6 rounded-2xl border-l-4 border-l-amber-400 sm:col-span-2">
+                        <div class="flex items-center justify-between flex-wrap gap-4">
+                            <div>
+                                <h3 class="font-display font-bold text-lg text-white">¿Tenés una urgencia eléctrica o de A/C?</h3>
+                                <p class="text-slate-400 text-sm">Consultanos por teléfono o WhatsApp para coordinar revisión.</p>
+                            </div>
+                            <a href="tel:+59894586969" class="px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition">
+                                <i class="fa-solid fa-phone mr-1.5"></i> 094 586 969
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN AGENDAR TURNO Y UBICACIÓN -->
+    <section id="agendar" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                
+                <div class="lg:col-span-7 card-glass rounded-3xl p-6 sm:p-10 shadow-2xl">
+                    <div class="mb-6">
+                        <span class="text-amber-400 font-bold text-xs uppercase tracking-[0.2em] block mb-1">Reserva Rápida</span>
+                        <h2 class="font-display font-black text-2xl sm:text-3xl text-white">Agendar Turno o Presupuesto</h2>
+                        <p class="text-slate-400 text-sm mt-1">Completá los datos y se enviarán directo a nuestro WhatsApp (094 586 969).</p>
+                    </div>
+
+                    <form id="bookingForm" onsubmit="enviarWhatsApp(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="clientName" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">Nombre y Apellido *</label>
+                                <input type="text" id="clientName" required placeholder="Ej: Juan Pérez" class="w-full bg-navy-950/90 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:border-amber-400 focus:outline-none transition">
+                            </div>
+                            <div>
+                                <label for="clientPhone" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">Tu Teléfono / WhatsApp *</label>
+                                <input type="tel" id="clientPhone" required placeholder="Ej: 099 123 456" class="w-full bg-navy-950/90 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:border-amber-400 focus:outline-none transition">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="clientCar" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">Vehículo (Marca / Modelo / Año) *</label>
+                                <input type="text" id="clientCar" required placeholder="Ej: VW Gol 2015" class="w-full bg-navy-950/90 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:border-amber-400 focus:outline-none transition">
+                            </div>
+                            <div>
+                                <label for="clientService" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">Servicio Requerido</label>
+                                <select id="clientService" class="w-full bg-navy-950/90 border border-slate-700 rounded-xl px-4 py-3 text-white focus:border-amber-400 focus:outline-none transition">
+                                    <option value="Reparación de Aire Acondicionado">Aire Acondicionado Automotriz (Promo 15% OFF)</option>
+                                    <option value="Electricidad Automotriz General">Electricidad Automotriz General</option>
+                                    <option value="Reparación de Alternadores y Arranques">Reparación de Alternadores y Arranques</option>
+                                    <option value="Diagnóstico Computarizado e Inyección">Diagnóstico Computarizado e Inyección</option>
+                                    <option value="Baterías y Sistema de Carga">Baterías y Sistema de Carga</option>
+                                    <option value="Instalación de Luces y Tableros">Instalación de Luces y Tableros</option>
+                                    <option value="Reparación de Cortos y Cableado">Reparación de Cortos y Cableado</option>
+                                    <option value="Consulta por Promoción">Consulta por Promoción</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="clientDate" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">Día / Horario Preferido (Opcional)</label>
+                            <input type="text" id="clientDate" placeholder="Ej: Mañana por la mañana / Viernes después de las 14 hs" class="w-full bg-navy-950/90 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:border-amber-400 focus:outline-none transition">
+                        </div>
+
+                        <div>
+                            <label for="clientMessage" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">Detalle de la Falla o Consulta</label>
+                            <textarea id="clientMessage" rows="3" placeholder="Contanos brevemente qué problema presenta el vehículo..." class="w-full bg-navy-950/90 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:border-amber-400 focus:outline-none transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 font-display font-black text-sm uppercase tracking-wider shadow-lg shadow-amber-500/20 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Agendar por WhatsApp Ahora
+                        </button>
+                    </form>
+                </div>
+
+                <div id="contacto" class="lg:col-span-5 flex flex-col justify-between gap-6">
+                    <div class="card-glass rounded-3xl p-6 sm:p-8 space-y-6">
+                        <div>
+                            <span class="text-amber-400 font-bold text-xs uppercase tracking-[0.2em] block mb-1">Dónde Estamos</span>
+                            <h3 class="font-display font-black text-2xl text-white">Información de Contacto</h3>
+                        </div>
+
+                        <div class="space-y-5">
+                            <div class="flex items-start gap-4">
+                                <div class="w-11 h-11 rounded-xl bg-amber-500/15 border border-amber-500/30 text-amber-400 flex items-center justify-center flex-shrink-0 text-lg">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block">Dirección del Taller</span>
+                                    <p class="text-white font-bold text-base">Yi 1688, Montevideo, Uruguay</p>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Yi+1688,+Montevideo,+Uruguay" target="_blank" rel="noopener" class="text-amber-400 hover:text-amber-300 text-xs font-bold inline-flex items-center gap-1 mt-1">
+                                        Ver en Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-11 h-11 rounded-xl bg-amber-500/15 border border-amber-500/30 text-amber-400 flex items-center justify-center flex-shrink-0 text-lg">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block">Teléfono y WhatsApp</span>
+                                    <a href="tel:+59894586969" class="text-white hover:text-amber-400 font-bold text-lg block transition">094 586 969</a>
+                                    <a href="https://wa.me/59894586969" target="_blank" rel="noopener" class="text-emerald-400 hover:text-emerald-300 text-xs font-bold inline-flex items-center gap-1 mt-0.5">
+                                        Enviar mensaje directo <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-11 h-11 rounded-xl bg-amber-500/15 border border-amber-500/30 text-amber-400 flex items-center justify-center flex-shrink-0 text-lg">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block">Horario de Atención</span>
+                                    <p class="text-white font-semibold text-sm">Lunes a Viernes: 08:30 a 18:00 hs</p>
+                                    <p class="text-slate-400 text-xs mt-0.5">Consultá disponibilidad por WhatsApp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-glass rounded-3xl overflow-hidden h-56 border border-slate-700/70">
+                        <iframe 
+                            title="Ubicación Gustavo Electricidad Automotriz - Yi 1688 Montevideo"
+                            src="https://www.google.com/maps?q=Yi%201688,%20Montevideo,%20Uruguay&output=embed" 
+                            class="w-full h-full border-0 filter contrast-125 opacity-90" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-navy-950 border-t border-slate-800/90 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg overflow-hidden border border-amber-500/40 bg-navy-900 flex items-center justify-center">
+                        <img src="logo.jpg" alt="Logo Gustavo" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="hidden fa-solid fa-bolt text-amber-400"></i>
+                    </div>
+                    <div>
+                        <span class="font-display font-black text-lg text-metallic block leading-none">GUSTAVO</span>
+                        <span class="text-[10px] font-bold tracking-[0.2em] text-amber-400 uppercase">Electricidad Automotriz</span>
+                    </div>
+                </div>
+
+                <div class="text-center md:text-left text-slate-400 text-sm">
+                    <p>Yi 1688, Montevideo, Uruguay &bull; Tel: <a href="tel:+59894586969" class="text-slate-200 hover:text-amber-400 font-semibold">094 586 969</a></p>
+                </div>
+
+                <div class="flex items-center gap-4 text-xs text-slate-500">
+                    <span>&copy; 2026 Gustavo Electricidad Automotriz</span>
+                    <button onclick="abrirLoginAdmin()" class="text-slate-600 hover:text-amber-400 transition flex items-center gap-1" title="Acceso exclusivo administrador">
+                        <i class="fa-solid fa-lock"></i> Acceso Taller
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/59894586969?text=Hola%20Gustavo!%20Quisiera%20agendar%20un%20turno%20en%20el%20taller." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white shadow-2xl shadow-emerald-500/40 flex items-center justify-center text-3xl transition transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- MODAL LOGIN ADMINISTRADOR -->
+    <div id="modalLogin" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-navy-900 border border-slate-700 rounded-2xl max-w-sm w-full p-6 shadow-2xl">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="font-display font-bold text-lg text-white flex items-center gap-2">
+                    <i class="fa-solid fa-lock text-amber-400"></i> Acceso Exclusivo Taller
+                </h3>
+                <button onclick="cerrarModalLogin()" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <p class="text-slate-400 text-xs mb-4">Ingresá tu clave de administrador para gestionar promociones.</p>
+            <form onsubmit="validarLoginAdmin(event)" class="space-y-4">
+                <input type="password" id="adminPassInput" required placeholder="Clave de acceso" class="w-full bg-navy-950 border border-slate-700 rounded-xl px-4 py-3 text-white focus:border-amber-400 focus:outline-none">
+                <p id="loginError" class="hidden text-red-400 text-xs font-semibold">Clave incorrecta. Intentá nuevamente.</p>
+                <button type="submit" class="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition">
+                    Ingresar
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL CREAR / EDITAR PROMOCIÓN (SOLO ADMIN) -->
+    <div id="modalPromo" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-navy-900 border border-slate-700 rounded-2xl max-w-md w-full p-6 shadow-2xl">
+            <div class="flex items-center justify-between mb-4">
+                <h3 id="modalPromoTitle" class="font-display font-bold text-lg text-white">Nueva Promoción</h3>
+                <button onclick="cerrarModalPromo()" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <form onsubmit="guardarPromocion(event)" class="space-y-4">
+                <input type="hidden" id="promoEditId">
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Etiqueta / Descuento</label>
+                    <input type="text" id="promoBadge" required placeholder="Ej: 15% OFF / VERANO" class="w-full bg-navy-950 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:border-amber-400 focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Título de la Promoción</label>
+                    <input type="text" id="promoTitle" required placeholder="Ej: Servicio de Aire Acondicionado" class="w-full bg-navy-950 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:border-amber-400 focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Descripción</label>
+                    <textarea id="promoDesc" rows="3" required placeholder="Detalles de lo que incluye la promo..." class="w-full bg-navy-950 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:border-amber-400 focus:outline-none"></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Precio o Vigencia</label>
+                    <input type="text" id="promoPrice" required placeholder="Ej: 15% OFF en Taller" class="w-full bg-navy-950 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:border-amber-400 focus:outline-none">
+                </div>
+                <div class="flex gap-3 pt-2">
+                    <button type="button" onclick="cerrarModalPromo()" class="w-1/2 py-2.5 rounded-xl border border-slate-600 text-slate-300 font-semibold text-sm">Cancelar</button>
+                    <button type="submit" class="w-1/2 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm">Guardar Promo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL CAMBIAR CLAVE (SOLO ADMIN) -->
+    <div id="modalClave" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-navy-900 border border-slate-700 rounded-2xl max-w-sm w-full p-6 shadow-2xl">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="font-display font-bold text-lg text-white">Cambiar Clave de Acceso</h3>
+                <button onclick="cerrarModalClave()" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <form onsubmit="actualizarClaveAdmin(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Nueva Clave</label>
+                    <input type="password" id="nuevaClaveInput" required minlength="4" placeholder="Mínimo 4 caracteres" class="w-full bg-navy-950 border border-slate-700 rounded-xl px-4 py-3 text-white focus:border-amber-400 focus:outline-none">
+                </div>
+                <button type="submit" class="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm">Actualizar Clave</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- SCRIPTS DE FUNCIONALIDAD COMPLETA -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function cerrarMenuMovil() {
+            mobileMenu.classList.add('hidden');
+        }
+
+        function seleccionarServicio(nombreServicio) {
+            const select = document.getElementById('clientService');
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].value === nombreServicio) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+            document.getElementById('agendar').scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => {
+                document.getElementById('clientName').focus();
+            }, 600);
+        }
+
+        function enviarWhatsApp(e) {
+            e.preventDefault();
+            const nombre = document.getElementById('clientName').value.trim();
+            const telefono = document.getElementById('clientPhone').value.trim();
+            const vehiculo = document.getElementById('clientCar').value.trim();
+            const servicio = document.getElementById('clientService').value;
+            const fecha = document.getElementById('clientDate').value.trim();
+            const detalles = document.getElementById('clientMessage').value.trim();
+
+            let mensaje = `Hola Gustavo! Quiero agendar un turno en el taller:\n\n`;
+            mensaje += `*Nombre:* ${nombre}\n`;
+            mensaje += `*Teléfono:* ${telefono}\n`;
+            mensaje += `*Vehículo:* ${vehiculo}\n`;
+            mensaje += `*Servicio:* ${servicio}\n`;
+            if (fecha) mensaje += `*Preferencia:* ${fecha}\n`;
+            if (detalles) mensaje += `*Detalle:* ${detalles}\n`;
+
+            const urlWhatsApp = `https://wa.me/59894586969?text=${encodeURIComponent(mensaje)}`;
+            window.open(urlWhatsApp, '_blank');
+        }
+
+        function consultarPromoWhatsApp(tituloPromo) {
+            const mensaje = `Hola Gustavo! Me interesa aprovechar la promoción: *${tituloPromo}* de la página GUSTAVO Electricidad Automotriz. ¿Cuándo puedo pasar por el taller en Yi 1688?`;
+            window.open(`https://wa.me/59894586969?text=${encodeURIComponent(mensaje)}`, '_blank');
+        }
+
+        // --- PROMOCIÓN DE VERANO ACTUALIZADA ---
+        const DEFAULT_PROMOS = [
+            {
+                id: 1,
+                badge: "¡15% OFF - VERANO!",
+                title: "Especial Aire Acondicionado Automotriz",
+                desc: "¡Se viene el verano, no pases calor! En GUSTAVO Electricidad Automotriz te ofrecemos un 15% de descuento en carga de gas, revisión de fugas y puesta a punto de tu A/C.",
+                price: "15% de Descuento"
+            },
+            {
+                id: 2,
+                badge: "DIAGNÓSTICO",
+                title: "Control de Carga y Batería",
+                desc: "Medición completa de alternador, arranque y estado real de batería para viajar sin sorpresas.",
+                price: "Consultar en Taller"
+            },
+            {
+                id: 3,
+                badge: "SCANNER",
+                title: "Escaneo Electrónico Multimarca",
+                desc: "Lectura computarizada de fallas de motor, sensores y borrado de testigos en tablero.",
+                price: "Turno Rápido"
+            }
+        ];
+
+        const STORAGE_PROMOS_KEY = 'gustavo_taller_promos_v2';
+        const STORAGE_PASS_KEY = 'gustavo_taller_admin_pass_v1';
+        const SESSION_ADMIN_KEY = 'gustavo_taller_is_admin';
+
+        function obtenerPromociones() {
+            const guardadas = localStorage.getItem(STORAGE_PROMOS_KEY);
+            if (!guardadas) {
+                localStorage.setItem(STORAGE_PROMOS_KEY, JSON.stringify(DEFAULT_PROMOS));
+                return DEFAULT_PROMOS;
+            }
+            return JSON.parse(guardadas);
+        }
+
+        function esAdminActivo() {
+            return sessionStorage.getItem(SESSION_ADMIN_KEY) === 'true';
+        }
+
+        function renderizarPromociones() {
+            const grid = document.getElementById('promocionesGrid');
+            const promos = obtenerPromociones();
+            const admin = esAdminActivo();
+
+            if (promos.length === 0) {
+                grid.innerHTML = `<div class="col-span-full text-center py-10 text-slate-400">No hay promociones publicadas en este momento.</div>`;
+                return;
+            }
+
+            grid.innerHTML = promos.map(promo => `
+                <div class="card-glass rounded-2xl p-7 flex flex-col justify-between relative overflow-hidden group border-amber-500/30">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="inline-block px-3 py-1 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-400 text-xs font-extrabold uppercase tracking-wider animate-pulse">
+                                ${promo.badge}
+                            </span>
+                            ${admin ? `
+                                <div class="flex items-center gap-1.5">
+                                    <button onclick="editarPromocion(${promo.id})" class="p-1.5 rounded-lg bg-slate-800 hover:bg-amber-500 text-slate-200 hover:text-slate-950 text-xs transition" title="Editar">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+                                    <button onclick="eliminarPromocion(${promo.id})" class="p-1.5 rounded-lg bg-slate-800 hover:bg-red-600 text-slate-200 hover:text-white text-xs transition" title="Eliminar">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            ` : ''}
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-white mb-2">${promo.title}</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">${promo.desc}</p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between gap-3">
+                        <span class="font-display font-extrabold text-amber-400 text-sm">${promo.price}</span>
+                        <button onclick="consultarPromoWhatsApp('${promo.title.replace(/'/g, "\\'")}')" class="px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider transition cursor-pointer">
+                            Aprovechar
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function actualizarUIModoAdmin() {
+            const adminBar = document.getElementById('adminBar');
+            const header = document.getElementById('mainHeader');
+            if (esAdminActivo()) {
+                adminBar.classList.remove('hidden');
+                header.style.top = adminBar.offsetHeight + 'px';
+            } else {
+                adminBar.classList.add('hidden');
+                header.style.top = '0px';
+            }
+            renderizarPromociones();
+        }
+
+        function abrirLoginAdmin() {
+            if (esAdminActivo()) return;
+            document.getElementById('loginError').classList.add('hidden');
+            document.getElementById('adminPassInput').value = '';
+            document.getElementById('modalLogin').classList.remove('hidden');
+            setTimeout(() => document.getElementById('adminPassInput').focus(), 100);
+        }
+
+        function cerrarModalLogin() {
+            document.getElementById('modalLogin').classList.add('hidden');
+        }
+
+        function validarLoginAdmin(e) {
+            e.preventDefault();
+            const ingresada = document.getElementById('adminPassInput').value;
+            const claveGuardada = localStorage.getItem(STORAGE_PASS_KEY) || '1688';
+            if (ingresada === claveGuardada) {
+                sessionStorage.setItem(SESSION_ADMIN_KEY, 'true');
+                cerrarModalLogin();
+                actualizarUIModoAdmin();
+            } else {
+                document.getElementById('loginError').classList.remove('hidden');
+            }
+        }
+
+        function cerrarSesionAdmin() {
+            sessionStorage.removeItem(SESSION_ADMIN_KEY);
+            actualizarUIModoAdmin();
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey && e.shiftKey && (e.key === 'A' || e.key === 'a')) {
+                e.preventDefault();
+                abrirLoginAdmin();
+            }
+        });
+
+        function abrirModalPromo() {
+            if (!esAdminActivo()) return;
+            document.getElementById('modalPromoTitle').textContent = 'Nueva Promoción';
+            document.getElementById('promoEditId').value = '';
+            document.getElementById('promoBadge').value = '';
+            document.getElementById('promoTitle').value = '';
+            document.getElementById('promoDesc').value = '';
+            document.getElementById('promoPrice').value = '';
+            document.getElementById('modalPromo').classList.remove('hidden');
+        }
+
+        function cerrarModalPromo() {
+            document.getElementById('modalPromo').classList.add('hidden');
+        }
+
+        function editarPromocion(id) {
+            if (!esAdminActivo()) return;
+            const promos = obtenerPromociones();
+            const promo = promos.find(p => p.id === id);
+            if (!promo) return;
+
+            document.getElementById('modalPromoTitle').textContent = 'Editar Promoción';
+            document.getElementById('promoEditId').value = promo.id;
+            document.getElementById('promoBadge').value = promo.badge;
+            document.getElementById('promoTitle').value = promo.title;
+            document.getElementById('promoDesc').value = promo.desc;
+            document.getElementById('promoPrice').value = promo.price;
+            document.getElementById('modalPromo').classList.remove('hidden');
+        }
+
+        function guardarPromocion(e) {
+            e.preventDefault();
+            if (!esAdminActivo()) return;
+
+            const promos = obtenerPromociones();
+            const editId = document.getElementById('promoEditId').value;
+            const nuevaData = {
+                id: editId ? Number(editId) : Date.now(),
+                badge: document.getElementById('promoBadge').value.trim(),
+                title: document.getElementById('promoTitle').value.trim(),
+                desc: document.getElementById('promoDesc').value.trim(),
+                price: document.getElementById('promoPrice').value.trim()
+            };
+
+            if (editId) {
+                const idx = promos.findIndex(p => p.id === Number(editId));
+                if (idx !== -1) promos[idx] = nuevaData;
+            } else {
+                promos.unshift(nuevaData);
+            }
+
+            localStorage.setItem(STORAGE_PROMOS_KEY, JSON.stringify(promos));
+            cerrarModalPromo();
+            renderizarPromociones();
+        }
+
+        function eliminarPromocion(id) {
+            if (!esAdminActivo()) return;
+            if (!confirm('¿Seguro que querés eliminar esta promoción?')) return;
+            const promos = obtenerPromociones().filter(p => p.id !== id);
+            localStorage.setItem(STORAGE_PROMOS_KEY, JSON.stringify(promos));
+            renderizarPromociones();
+        }
+
+        function abrirModalClave() {
+            if (!esAdminActivo()) return;
+            document.getElementById('nuevaClaveInput').value = '';
+            document.getElementById('modalClave').classList.remove('hidden');
+        }
+
+        function cerrarModalClave() {
+            document.getElementById('modalClave').classList.add('hidden');
+        }
+
+        function actualizarClaveAdmin(e) {
+            e.preventDefault();
+            if (!esAdminActivo()) return;
+            const nueva = document.getElementById('nuevaClaveInput').value.trim();
+            if (nueva.length >= 4) {
+                localStorage.setItem(STORAGE_PASS_KEY, nueva);
+                cerrarModalClave();
+                alert('Clave actualizada correctamente.');
+            }
+        }
+
+        function descargarHTMLActualizado() {
+            if (!esAdminActivo()) return;
+            const promosActuales = JSON.stringify(obtenerPromociones(), null, 12);
+            let htmlActual = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            htmlActual = htmlActual.replace(
+                /const DEFAULT_PROMOS = \[[\s\S]*?\];/,
+                `const DEFAULT_PROMOS = ${promosActuales};`
+            );
+            const blob = new Blob([htmlActual], { type: 'text/html;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'index.html';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        document.addEventListener('DOMContentLoaded', actualizarUIModoAdmin);
+    </script>
+</body>
+</html>
