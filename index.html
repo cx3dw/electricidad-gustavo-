@@ -890,7 +890,7 @@
         function actualizarClaveAdmin(e) {
             e.preventDefault();
             if (!esAdminActivo()) return;
-            const nueva = document.getElementById('Radiocx3460').value.trim();
+            const nueva = document.getElementById('nuevaClaveInput').value.trim();
             if (nueva.length >= 4) {
                 localStorage.setItem(STORAGE_PASS_KEY, nueva);
                 cerrarModalClave();
